@@ -506,6 +506,65 @@ a {
     letter-spacing: 0.05em;
 }
 
+/* Partner Logo Modifications */
+.partner-logo-with-case {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.partner-logo-with-case:hover {
+    border-bottom: none;
+}
+
+.partner-case {
+    font-size: 0.85rem;
+    font-family: var(--font-body);
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--color-accent);
+    opacity: 0.8;
+    transition: var(--transition-smooth);
+}
+
+.partner-case:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Pricing Plans */
+.pricing-plans {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.pricing-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+.pricing-plan h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    font-weight: 300;
+}
+
+.pricing-plan span {
+    font-family: var(--font-english);
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    letter-spacing: 0.1em;
+}
+
 /* Animations Triggered by Classes */
 .reveal-up {
     opacity: 0;

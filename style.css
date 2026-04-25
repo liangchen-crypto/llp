@@ -565,6 +565,112 @@ a {
     letter-spacing: 0.1em;
 }
 
+/* Light Pricing Plans */
+.pricing-plans-light {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pricing-plan-light {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+    transition: var(--transition-smooth);
+}
+
+.pricing-plan-light:hover {
+    border-bottom-color: var(--color-accent);
+}
+
+.pricing-plan-light h4 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--color-text-primary);
+    font-weight: 400;
+}
+
+.pricing-plan-light .price-val {
+    font-family: var(--font-english);
+    font-size: 1rem;
+    color: var(--color-accent);
+    letter-spacing: 0.1em;
+}
+
+/* Redesigned Contact Info */
+.contact-info-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.contact-item {
+    min-width: 200px;
+}
+
+.contact-label {
+    color: var(--color-accent);
+    font-family: var(--font-english);
+    letter-spacing: 0.15em;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.contact-value {
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    transition: var(--transition-smooth);
+    display: inline-block;
+    font-weight: 300;
+}
+
+a.contact-value:hover {
+    color: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.social-links-center {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-links-center .social-icon {
+    font-family: var(--font-english);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    position: relative;
+    padding-bottom: 3px;
+    transition: var(--transition-smooth);
+}
+
+.social-links-center .social-icon::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.social-links-center .social-icon:hover {
+    color: var(--color-accent);
+}
+
+.social-links-center .social-icon:hover::after {
+    width: 100%;
+}
+
 /* Animations Triggered by Classes */
 .reveal-up {
     opacity: 0;

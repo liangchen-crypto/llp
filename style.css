@@ -80,11 +80,29 @@ a {
     box-shadow: 0 4px 30px rgba(0,0,0,0.03);
 }
 
+.nav-branding {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
 .nav-logo {
     font-family: var(--font-english);
     font-size: 1.1rem;
     letter-spacing: 0.15em;
     font-weight: 600;
+}
+
+.nav-badge {
+    background-color: var(--color-accent);
+    color: #FFF;
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 2px;
+    align-self: flex-start;
+    font-family: var(--font-body);
+    font-weight: 500;
+    letter-spacing: 0.15em;
 }
 
 .nav-links {
@@ -121,6 +139,19 @@ a {
     font-size: clamp(2.2rem, 4vw, 3.5rem);
     line-height: 1.2;
     margin-bottom: 2rem;
+}
+
+.section-title.small-title {
+    font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    line-height: 1.4;
+}
+
+.highlight-bg {
+    background-color: var(--color-accent);
+    color: #FFF;
+    padding: 0 0.8rem;
+    border-radius: 4px;
+    display: inline-block;
 }
 
 .title-line {
@@ -180,7 +211,7 @@ a {
 }
 
 .hero-title {
-    font-size: clamp(1.6rem, 3.5vw, 3.2rem);
+    font-size: clamp(1.2rem, 2.5vw, 2.2rem);
     line-height: 1.2;
     letter-spacing: 0.05em;
     margin-bottom: 2rem;

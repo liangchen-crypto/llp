@@ -57,17 +57,17 @@
             </div>
 
             <div class="solutions-grid mx-auto reveal-up delay-1" style="max-width: 1000px; margin-top: 3rem;">
-                <div class="solution-item">
+                <div class="solution-item" onclick="openServiceModal('enterprise')">
                     <span class="solution-number">01</span>
                     <h4 class="solution-title">企业出海执行</h4>
                     <div class="solution-line"></div>
                 </div>
-                <div class="solution-item">
+                <div class="solution-item" onclick="openServiceModal('channel')">
                     <span class="solution-number">02</span>
                     <h4 class="solution-title">海外渠道拓展</h4>
                     <div class="solution-line"></div>
                 </div>
-                <div class="solution-item">
+                <div class="solution-item" onclick="openServiceModal('trade')">
                     <span class="solution-number">03</span>
                     <h4 class="solution-title">品牌增效交易</h4>
                     <div class="solution-line"></div>
@@ -78,7 +78,8 @@
 
     <section class="section services" id="services">
         <div class="container">
-            <h2 class="section-title text-center reveal-up small-title">企业海外 <span class="highlight-bg">品牌价值</span> 的三重奏</h2>
+            <h2 class="section-title text-center reveal-up small-title">企业海外 <span class="highlight-bg">品牌价值</span> 的三重奏
+            </h2>
             <div class="title-line center mx-auto"></div>
             <p class="text-center section-desc reveal-up delay-1">围绕品牌资产，构建从内在精神到外在行动，再到生态共同体的闭环。</p>
 
@@ -173,8 +174,9 @@
     <footer class="footer" id="contact">
         <div class="container text-center">
             <div style="margin-bottom: 1rem;">
-                <h2 class="section-title" style="color: #fff; margin-bottom: 0.5rem; font-family: var(--font-body); font-weight: 500;">谁与您气味相投？</h2>
-                <div class="nav-badge" style="display: inline-block; font-size: 0.9rem; padding: 0.3rem 1rem;">在新加坡遇到hahadog</div>
+                <!-- Removed Text -->
+                <div class="nav-badge" style="display: inline-block; font-size: 0.9rem; padding: 0.3rem 1rem;">
+                    在新加坡遇到hahadog</div>
             </div>
             <div class="title-line center mx-auto" style="margin-bottom: 4rem;"></div>
 
@@ -200,6 +202,16 @@
             <p>&copy; 2026 Value ENGINE SINGAPORE. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Service Modal (Secondary Page) -->
+    <div class="modal-overlay" id="service-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeServiceModal()">&times;</button>
+            <div id="modal-body">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

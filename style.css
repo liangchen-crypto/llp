@@ -333,6 +333,8 @@ a {
     position: relative;
     padding-right: 2rem;
     padding-bottom: 2rem;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .portrait-img {
@@ -670,6 +672,7 @@ a {
     box-shadow: 0 10px 40px rgba(0,0,0,0.02);
     border-top: 3px solid transparent;
     transition: var(--transition-smooth);
+    cursor: pointer;
 }
 
 .solution-item:hover {
@@ -800,6 +803,99 @@ a.contact-value:hover {
 .reveal-up.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Modal (Secondary Page) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Darker backdrop */
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-smooth);
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: var(--color-surface);
+    width: 90%;
+    max-width: 600px;
+    padding: 3rem;
+    position: relative;
+    transform: translateY(30px);
+    transition: var(--transition-smooth);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-top: 4px solid var(--color-accent);
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: var(--color-accent);
+}
+
+.modal-header {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.modal-price {
+    font-size: 1.4rem;
+    color: var(--color-accent);
+    margin-bottom: 2rem;
+    font-family: var(--font-body);
+    font-weight: 500;
+}
+
+.modal-services {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-services li {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.modal-services li::before {
+    content: '•';
+    color: var(--color-accent);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
 }
 
 .reveal-text {

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海外渠道拓展 | VALUE ENGINE</title>
+    <meta name="description" content="连接东南亚与中国，让品牌的发展带来更多的美好。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+SC:wght@300;400;600;900&family=Inter:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-detail-header {
+            padding: 15vh 5vw 8vh 5vw;
+            background-color: var(--color-dark-bg);
+            color: var(--color-dark-text);
+            text-align: center;
+        }
+        .service-detail-content {
+            padding: 8vh 5vw 12vh 5vw;
+            background-color: var(--color-surface);
+        }
+        .detail-card {
+            background-color: #FFF;
+            padding: 4rem;
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.04);
+            border-top: 4px solid var(--color-accent);
+        }
+        .detail-item {
+            margin-bottom: 3rem;
+        }
+        .detail-item:last-child {
+            margin-bottom: 0;
+        }
+        .detail-title {
+            font-size: 1.5rem;
+            color: var(--color-text-primary);
+            margin-bottom: 1rem;
+            font-family: var(--font-heading);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .detail-title::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 2px;
+            background-color: var(--color-accent);
+        }
+        .detail-desc {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            padding-left: calc(15px + 1rem);
+        }
+        .price-tag {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            font-family: var(--font-body);
+            font-weight: 500;
+            margin-top: 4rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: var(--transition-smooth);
+            text-align: center;
+            width: 100%;
+        }
+        .back-link:hover {
+            color: var(--color-accent);
+        }
+        @media (max-width: 768px) {
+            .detail-card { padding: 2rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="architect-nav scrolled">
+        <div class="nav-logo">VALUE ENGINE</div>
+        <ul class="nav-links">
+            <li><a href="index.html#mission">返回主页 BACK</a></li>
+        </ul>
+    </nav>
+
+    <header class="service-detail-header reveal-up">
+        <h1 class="section-title text-accent" style="margin-bottom: 1rem;">海外渠道拓展</h1>
+        <div class="title-line center mx-auto"></div>
+        <p class="section-desc" style="margin-bottom: 0;">构建顺畅无阻的跨境合作网络，拓展高净值核心客群。</p>
+    </header>
+
+    <section class="service-detail-content">
+        <div class="container">
+            <div class="detail-card reveal-up">
+                <div class="detail-item">
+                    <h3 class="detail-title">品牌呈现</h3>
+                    <p class="detail-desc">将您的品牌核心理念转化为直抵人心的极具美感的跨文化叙事。我们确保品牌在海外各个主流渠道与专业圈层终端，以最具视觉张力与文化影响力的形态进行高质量展露，迅速建立海外受众的信任度。</p>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail-title">需求对接</h3>
+                    <p class="detail-desc">在错综复杂的跨境商业生态中，精准连接本土衍生需求与您的品牌核心优势。我们致力于促成产业链条上下游的高效啮合，为您打造一条顺畅无阻的黄金合作通道。</p>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail-title">大客户开发</h3>
+                    <p class="detail-desc">精准锁定高净值且对品牌长远发展具备决定性战略意义的核心圈层客群。我们代表企业开展系统性的深度渗透与互动，助推建立持久的战略伙伴关系，获取决定性的市场资源背书。</p>
+                </div>
+                
+                <div class="price-tag">
+                    服务报价：人民币7万元起
+                </div>
+            </div>
+            <a href="index.html" class="back-link">← 返 回 主 页</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

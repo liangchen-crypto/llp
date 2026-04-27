@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品牌增效交易 | VALUE ENGINE</title>
+    <meta name="description" content="连接东南亚与中国，让品牌的发展带来更多的美好。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+SC:wght@300;400;600;900&family=Inter:wght@300;400;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-detail-header {
+            padding: 15vh 5vw 8vh 5vw;
+            background-color: var(--color-dark-bg);
+            color: var(--color-dark-text);
+            text-align: center;
+        }
+        .service-detail-content {
+            padding: 8vh 5vw 12vh 5vw;
+            background-color: var(--color-surface);
+        }
+        .detail-card {
+            background-color: #FFF;
+            padding: 4rem;
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.04);
+            border-top: 4px solid var(--color-accent);
+        }
+        .detail-item {
+            margin-bottom: 3rem;
+        }
+        .detail-item:last-child {
+            margin-bottom: 0;
+        }
+        .detail-title {
+            font-size: 1.5rem;
+            color: var(--color-text-primary);
+            margin-bottom: 1rem;
+            font-family: var(--font-heading);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .detail-title::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 2px;
+            background-color: var(--color-accent);
+        }
+        .detail-desc {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            padding-left: calc(15px + 1rem);
+        }
+        .price-tag {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            font-family: var(--font-body);
+            font-weight: 500;
+            margin-top: 4rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: var(--transition-smooth);
+            text-align: center;
+            width: 100%;
+        }
+        .back-link:hover {
+            color: var(--color-accent);
+        }
+        @media (max-width: 768px) {
+            .detail-card { padding: 2rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="architect-nav scrolled">
+        <div class="nav-logo">VALUE ENGINE</div>
+        <ul class="nav-links">
+            <li><a href="index.html#mission">返回主页 BACK</a></li>
+        </ul>
+    </nav>
+
+    <header class="service-detail-header reveal-up">
+        <h1 class="section-title text-accent" style="margin-bottom: 1rem;">品牌增效交易</h1>
+        <div class="title-line center mx-auto"></div>
+        <p class="section-desc" style="margin-bottom: 0;">链接全球优质资本市场体系，实现品牌价值的高维进化。</p>
+    </header>
+
+    <section class="service-detail-content">
+        <div class="container">
+            <div class="detail-card reveal-up">
+                <div class="detail-item">
+                    <h3 class="detail-title">战略合作</h3>
+                    <p class="detail-desc">为您在全球范围内寻觅并接洽具备高度资源共识与互补性的商业生态圈伙伴。通过具有前瞻性的联合营销方案、创新的跨界品牌联名及长效的深层架构资源共享，以几何倍数拓宽品牌的生存繁衍空间。</p>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail-title">企业并购</h3>
+                    <p class="detail-desc">以敏锐嗅觉洞悉复杂的全球商业生态深层隐秘价值。凭借精准的评判标尺为您发掘质地优良、战略互补的海外并购标的，并运用成熟的资本运作设计，跨越周期实现品牌版图的外延成长。</p>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail-title">股权融资</h3>
+                    <p class="detail-desc">高效链接全球优质资本流通市场与顶级产业投资机构，引入在发展理念上高度契合，并能提供强大本土化产业赋能的战略型投资者。为品牌出海的高能级跃升提供最充沛且强劲的金融血液。</p>
+                </div>
+                
+                <div class="price-tag">
+                    服务报价：人民币45万元起
+                </div>
+            </div>
+            <a href="index.html" class="back-link">← 返 回 主 页</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

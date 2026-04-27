@@ -58,8 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Simple Parallax Effect for Hero Background
     const heroBg = document.querySelector('.hero-bg');
-    window.addEventListener('scroll', () => {
-        const scrollPosition = window.pageYOffset;
-        if (scrollPosition < window.innerHeight) {
-            // Move background slightly to create parallax
+    if (heroBg) {
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.pageYOffset;
+            if (scrollPosition < window.innerHeight) {
+                // Move background slightly to create parallax
+                heroBg.style.transform = `translate3d(0, ${scrollPosition * 0.4}px, 0)`;
+            }
+        });
+    }
 });
